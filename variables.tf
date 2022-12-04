@@ -14,13 +14,13 @@ variable "cluster_oidc_issuer_url" {
 }
 
 variable "service_account_namespace" {
-  description = "Namespace of ServiceAccount for cert-manager"
-  default     = "cert-manager"
+  description = "Namespace of ServiceAccount for velero"
+  default     = "velero"
 }
 
 variable "service_account_name" {
-  description = "ServiceAccount name for cert-manager"
-  default     = "cert-manager"
+  description = "ServiceAccount name for velero"
+  default     = "velero"
 }
 
 variable "tags" {
