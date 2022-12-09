@@ -28,7 +28,7 @@ output "iam_access_key_id" {
   value       = local.use_iam ? resource.aws_iam_access_key.aws_velero[0].id : ""
 }
 
-output "aws_iam_access_key" {
+output "iam_access_key" {
   description = "IAM User Secret access key"
   value       = local.use_iam ? resource.aws_iam_access_key.aws_velero[0].secret : ""
 }
